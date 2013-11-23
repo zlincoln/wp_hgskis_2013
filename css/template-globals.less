@@ -1,0 +1,164 @@
+//mixins
+.border-radius (@radius: 5px) {
+	-webkit-border-radius: @radius;
+	-moz-border-radius:    @radius;
+	border-radius:         @radius;
+
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+}
+
+@initial-logo-height: 84px;
+@secondary-logo-height: 77px; //plus 5px buffer
+@logo-sprite-width: 134px;
+
+@black: #383833;
+@orange: #D45F16;
+@red: #CC0000;
+@blue: #0F7099;
+@purple: #5b26a6;
+@purple-alpha: rgba(red(@purple), green(@purple), blue(@purple), .3);
+@white: #fff;
+@white-alpha: rgba(255,255,255,.5);
+
+//override
+@brand-primary: @blue;
+
+
+
+body{
+	background: white url(../images/master-bg.jpg) left top repeat;
+	font-family: @font-family-sans-serif;
+	font-size: 16px;
+	line-height: 1.3;
+	color: @black;
+	// .box-shadow(inset 0px 0px 20px 12px #000);
+	header{
+		@dist-top: 20px;
+		padding: 10px 0;
+		margin-top: @dist-top;
+		margin-bottom: (@dist-top)+5px;
+		nav.navbar{
+			position: relative;
+			min-height: 0px;
+			.border-radius(0px);
+			margin: 0px;
+			div.navbar-header{
+				a.navbar-brand{
+					position: absolute;
+					top: 0;
+					left: 50%;
+					margin-top: (-@dist-top)-5px;
+					margin-left: -@logo-sprite-width/2!important;
+					height: @initial-logo-height;
+					width: @logo-sprite-width;
+					display: block;
+					background: transparent url(../images/hg-logo-sprite-main.png) center top no-repeat;
+					.transition(background-position 1s);
+					&.reduced{
+						height: @secondary-logo-height;
+						background-position: center -@initial-logo-height;
+					}
+				}
+			}
+			ul.main-nav{
+				list-style-type: none;
+				margin: 0px;
+				display: table;
+				width: 50%;
+				float: left;
+				.box-sizing(border-box);
+				li{
+					display: table-cell;
+					float: none;
+					vertical-align: middle;
+					a{
+						text-transform: uppercase;
+						display: block;
+						text-align: center;
+						border-left: 1px solid @black;
+						font-size: 18/16em;
+						font-weight: lighter;
+						color: @black;
+						text-decoration: none;
+						.transition(color .5s);
+						padding: 2px 0;
+						// font-family: @headings-font-family;
+						&:hover{
+							color: @link-color;
+						}
+					}
+					&:first-child a{
+						border-left: none;
+					}
+					&.current-menu-item{
+						background: @white-alpha;
+					}
+				}
+				&.nav-left{
+					padding-right: @logo-sprite-width/1.8;
+				}
+				&.nav-right{
+					padding-left: @logo-sprite-width/1.8;
+				}
+			}
+		}
+	}
+}
+
+footer{
+	margin-top: 20px;
+	div.inner-wrap{
+		border-top: 1px solid @black;
+		padding-top: 10px;
+		padding-bottom: 40px;
+	}
+	div.copyright-holder{
+		font-size: 12/16em;
+		width: 50%;
+		span{
+			margin-left: 2%;
+			display: inline-block;
+		}
+	}
+	nav.social-nav{
+		padding-top: 10px;
+		ul{
+			list-style-type: none;
+			padding: 0;
+			margin: 0;
+			li{
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				a{
+					i.icon{
+						display: block;
+						height: 22px;
+						width: 24px;
+						background: transparent url(../images/social-sprite.png) left top no-repeat;
+						&.icon-facebook{
+							background-position: 0 0;
+						}
+						&.icon-vimeo{
+							background-position: -25px 0;
+						}
+						&.icon-instagram{
+							background-position: -50px 0;
+						}
+						&.icon-twitter{
+							background-position: -75px 0;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.wysiwyg-content{
+	ul, ol{
+		list-style-position: inside;
+	}
+}

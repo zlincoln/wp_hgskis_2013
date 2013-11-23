@@ -1,0 +1,42 @@
+section.gallery-detail-template{
+	#detail-target{
+		//styles for when markup poured into detail window
+		display: none;
+		border-bottom: 1px solid @black;
+		margin-bottom: 20px;
+		.item-viewport{
+			img{
+				max-height: 500px;
+			}
+			iframe{
+				display: none;
+			}
+		}
+	}
+	.item-gallery{
+		a.item-wrapper{
+			div.item-viewport{
+				img{
+					max-height: 240px;
+				}
+				iframe{
+					display: none;
+				}
+			}
+			div.item-details{
+				&>*{
+					display: none;
+				}
+				.item-title{
+					display: block;
+				}
+			}
+		}
+	}
+	&.detail-view{
+		#detail-target{
+			display: block;
+			border-bottom: none;
+		}
+	}
+}
