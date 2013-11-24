@@ -4,52 +4,48 @@ Template Name: Ski Page
 */
 get_header();
 if(have_posts()): while(have_posts()): the_post();
+$content = get_the_content();
+$splitContent = explode(':::right_side:::',$content);
 ?>
 
 <section class="ski-detail">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12">
-				<h1><span>Stinger</span><img class="img-responsive" src="images/product-images/stinger-logo.png" alt="Stinger"></h1>
-				<img class="img-responsive" src="images/product-images/stinger-topsheet.png">
+			<div class="col-xs-12 col-md-5 wysiwyg-content">
+				<?= $splitContent[0]; ?>
+			</div>
+			<div class="col-xs-12 col-md-2 ski-image">
+				<?php the_post_thumbnail('full', array('class'=>'img-responsive')); ?>
+			</div>
+			<div class="col-xs-12 col-md-5 wysiwyg-content">
+				<?= $splitContent[1]; ?>
+				<?php echo get_post_meta($post->ID,'ski_paypal_embed', true); ?>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-8">
-				<h2>Stinger</h2>
-				<div class="wysiwyg-content">
-					<?php the_content(); ?>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
-				<div class="actions">
-					<span class="price">$599</span>
-					<a class="btn btn-primary">Buy</a>
-				</div>
-				<div class="reviews">
-					<div class="review-wrap">
-						<h6>Best pair of skis I've ever touched</h6>
-						<ul class="rating">
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star-empty"></i></li>
-						</ul>
-						<p>This is a product review submitted by a real customer who loves everything about these skis!  He talks about how much fun they are to ride and how everyone notices the dope graphics and wonders where he got them.</p>
-					</div>
-					<div class="review-wrap">
-						<h6>Best pair of skis I've ever touched</h6>
-						<ul class="rating">
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star"></i></li>
-							<li><i class="glyphicon glyphicon-star-empty"></i></li>
-						</ul>
-						<p>This is a product review submitted by a real customer who loves everything about these skis!  He talks about how much fun they are to ride and how everyone notices the dope graphics and wonders where he got them.</p>
-					</div>
-				</div>
+			<div class="col-xs-12 dimensions">
+				<table class="table">
+					<thead>
+						<th>Length</th>
+						<th>Dimensions</th>
+						<th>Turning Radius</th>
+						<th>Weight</th>
+					</thead>
+					<tbody>
+						<tr>
+							<td>168cm</td>
+							<td>125-96-125mm</td>
+							<td>18m</td>
+							<td>?lb/ski</td>
+						</tr>
+						<tr>
+							<td>168cm</td>
+							<td>125-96-125mm</td>
+							<td>18m</td>
+							<td>?lb/ski</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 	</div>
