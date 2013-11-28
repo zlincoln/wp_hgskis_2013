@@ -41,7 +41,13 @@ function homePageQuery($query){
 		$query->set('cat', $videoCat->term_id);
 	}
 }
-add_action('pre_get_posts', 'homePageQuery');
+
+function mediaPageQuery($query){
+	if($query->is_main_query()){
+		$query->set('posts_per_page', 2);
+	}
+}
+// add_action('pre_get_posts', 'homePageQuery');
 
 switch ($template_file){
 	case 'home.php':

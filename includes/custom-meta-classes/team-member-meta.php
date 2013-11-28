@@ -44,6 +44,8 @@ echo <<<EOT
 	<input type="text" id="vimeo_embed_field" name="vimeo_embed_field" value='$vimeo_embed' style="width:100%">
 EOT;
 
+		//http://themefoundation.com/wordpress-meta-boxes-guide/
+		// ^^ js for calling media library ^^
 		$photos = get_post_meta($post->ID, 'team_photo', false);
 		// error_log(print_r($photos, true));
 		wp_nonce_field('team_photo_verify', 'team_photo_verify_value');

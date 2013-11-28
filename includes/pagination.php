@@ -1,5 +1,7 @@
 <ul class="pagination pagination-lg">
-	<li class="disabled"><span>&laquo;</span></li>
+	<li <?= ($paged == 1) ? 'class="disabled"' : ''; ?>>
+		<a href="<?php previous_posts_link(); ?>">&laquo;</a>
+	</li>
 	<li class="active"><span>1</span></li>
 	<li><a href="#">2</a></li>
 	<li><a href="#">3</a></li>

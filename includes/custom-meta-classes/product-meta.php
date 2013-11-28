@@ -47,6 +47,8 @@ echo <<<EOT
 		<input type="text" id="product_price_field" name="product_price_field" style="width:100%;" value="$product_price">
 EOT;
 
+		//http://themefoundation.com/wordpress-meta-boxes-guide/
+		// ^^ js for calling media library ^^
 		$photos = get_post_meta($post->ID, 'product_photo', false);
 		// error_log(print_r($photos, true));
 		wp_nonce_field('product_photo_verify', 'product_photo_verify_value');

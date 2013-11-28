@@ -4,18 +4,21 @@ Template Name: Home Page
 */
 
 get_header();
+
+$videos = new WP_Query('posts_per_page=5&category_name=video');
+
 ?>
 <section class="hero">
 	<div class="flexslider">
 		<ul class="slides">
 			<?php
-			if(have_posts()): while(have_posts()): the_post();
+			if($videos->have_posts()): while($videos->have_posts()): $videos->the_post();
 			$vimeo_embed = get_post_meta($post->ID, 'vimeo_embed', true);
-			if($vimeo_embed[0] != ''):
+			if($vimeo_embed != ''):
 			?>
 			<li>
 				<div class="embed">
-					<?= $vimeo_embed[0]; ?>
+					<?= $vimeo_embed; ?>
 				</div>
 				<div class="caption">
 					<p><?php the_content(); ?></p>

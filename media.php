@@ -3,78 +3,62 @@
 Template Name: Media Page
 */
 get_header();
-if(have_posts()): while(have_posts()): the_post();
+
+$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
+$media = new WP_Query('posts_per_page=2&paged='.$paged);
 ?>
 
 <section id="blog" class="container">
 	<div class="row">
 		<h1 class="col-xs-12">Latest Updates</h1>
 		<div class="col-xs-12 col-sm-9 col-lg-9">
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h2>Presenting: Aurora Trailer</h2>
+			<?php
+			if($media->have_posts()): while($media->have_posts()): $media->the_post();
+			$categories = wp_get_post_categories(get_the_ID(), array('fields'=>'slugs'));
+			$vimeo_embed = get_post_meta(get_the_ID(), 'vimeo_embed', true);
+			?>
+			<article>
+				<h2><?php the_title(); ?></h2>
+				<?php
+				if(in_array('video', $categories)): ?>
+				<div class="embed">
+					<?=  $vimeo_embed; ?>
 				</div>
-				<div class="panel-body">
-					<p>Aurora: n. the dawn.  We present the trailer for Aurora, our team movie for the 2012-2013 season. It was almost entirely filmed in the northeast exposing some very unique features custom to the area.  Filmed & Edited by: Sam Rogers & Charlie Stemen [...]</p>
+				<?php
+				elseif(in_array('photo', $categories)): ?>
+				<div class="image-wrapper">
+					<?php the_post_thumbnail('full', array('class'=>'img-responsive')); ?>
 				</div>
-				<div class="panel-footer clearfix">
-					<a href="#" class="pull-right btn btn-primary">Read More</a>
-				</div>
-			</article>
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h2>City Prospect Apparel</h2>
-				</div>
-				<div class="panel-body">
-					<p>Connor taking some laps through Sugarbush Parks for the new City Prospect Apparel edit, Enjoy! [...]</p>
-				</div>
-				<div class="panel-footer clearfix">
-					<a href="#" class="pull-right btn btn-primary">Read More</a>
-				</div>
-			</article>
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h2>Powder Magazine</h2>
-				</div>
-				<div class="panel-body">
-					<p>We had the pleasure of talking with Powder Magazine a few weeks back. Check out their write up on our talk and see where we came from and what our future is!     [...]</p>
-				</div>
-				<div class="panel-footer clearfix">
-					<a href="#" class="pull-right btn btn-primary">Read More</a>
+				<?php
+				endif;
+				?>
+				<div class="wysiwyg-content">
+					<?php the_content(); ?>
 				</div>
 			</article>
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h2>The Score</h2>
-				</div>
-				<div class="panel-body">
-					<p>Finally blessed with over 2 feet of snow, Sugarbush Parks is primed and Connor and James take full advantage of the creative setup. The streets of Burlington and Winooski were calling us with fresh snow and we were finally able to put together some shots! [...]</p>
-				</div>
-				<div class="panel-footer clearfix">
-					<a href="#" class="pull-right btn btn-primary">Read More</a>
-				</div>
-			</article>
-			<article class="panel panel-default">
-				<div class="panel-heading">
-					<h2>Pushin'</h2>
-				</div>
-				<div class="panel-body">
-					<p>Back with our first edit of the new season, the crew gets after some early urban features, we check in with LV up in Canada and get to see his park run from Chile, and finally James Amodeo and Connor Geata give a lesson on the down rail at Sugarbush Parks! [...]</p>
-				</div>
-				<div class="panel-footer clearfix">
-					<a href="#" class="pull-right btn btn-primary">Read More</a>
-				</div>
-			</article>
-			<?php include('includes/pagination.php'); ?>
+			<?php
+			endwhile;
+			endif;
+			$big = 999999999;
+			echo paginate_links(array(
+				'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
+				'format' => '?paged=%#%',
+				'current' => max(1, $paged),
+				'total' => $media->max_num_pages,
+				'type' => 'list',
+				'next_text' => '&raquo;',
+				'prev_text' => '&laquo;'
+			));
+			?>
 		</div>
+		<!--
 		<div class="col-12 col-sm-3 col-lg-3">
 			<?php include('includes/blog-nav.php'); ?>
 		</div>
+		-->
 	</div>
 </section>
 
 <?php 
-endwhile;
-endif;
 get_footer();
 ?>
