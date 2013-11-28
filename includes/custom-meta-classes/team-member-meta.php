@@ -56,7 +56,7 @@ EOT;
 				echo '<input type="text" id="team_photo_'.$key.'" name="team_photo['.$key.']" value="'.$photo.'" style="width:100%">';
 			}
 		}
-		echo '<button class="add-new-photo-input">Add another photo</button>';
+		echo '<button class="add-team-photo-input">Add another photo</button>';
 	}
 
 	public function save($post_id){

@@ -26,7 +26,7 @@ $team_args = array(
 	)
 );
 
-$member_count = 1;
+$count = 1;
 
 ?>
 

@@ -53,7 +53,7 @@ function product(){
 		'public' => true,
 		'menu_position' => 20,
 		'supports' => array('title', 'editor', 'thumbnail', 'excerpt', 'revisions'),
-		'taxonomies' => array('member_category'),
+		'taxonomies' => array('product_category'),
 		'has_archive' => false
 	);
 
