@@ -20,6 +20,7 @@ include('includes/custom-post-types.php');
 include('includes/custom-meta-classes/skis-meta.php');
 include('includes/custom-meta-classes/post-meta.php');
 include('includes/custom-meta-classes/product-meta.php');
+include('includes/custom-meta-classes/team-member-meta.php');
 
 //utility for adding meta actions onload
 function loadMetaClass($class){
@@ -62,5 +63,6 @@ switch ($template_file){
 //load on every page
 loadMetaClass('PostMeta');
 loadMetaClass('ProductMeta');
+loadMetaClass('MemberMeta');
 
 ?>

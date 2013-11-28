@@ -5,23 +5,12 @@ section.gallery-detail-template{
 		border-bottom: 1px solid @black;
 		margin-bottom: 20px;
 		.item-viewport{
-			img{
-				max-height: 500px;
-			}
-			iframe{
-				display: none;
-			}
 		}
 	}
 	.item-gallery{
 		a.item-wrapper{
 			div.item-viewport{
-				img{
-					max-height: 240px;
-				}
-				iframe{
-					display: none;
-				}
+
 			}
 			div.item-details{
 				&>*{
@@ -37,6 +26,22 @@ section.gallery-detail-template{
 		#detail-target{
 			display: block;
 			border-bottom: none;
+		}
+	}
+	&.family{
+		.item-gallery{
+			a.item-wrapper{
+				div.item-viewport{
+					ul.slides{
+						li{
+							display: none;
+							&:first-child{
+								display: block;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }

@@ -49,7 +49,7 @@ EOT;
 	}
 
 	public function save($post_id){
-		if(!isset($_POST['product_paypal_field_value'])){
+		if(!isset($_POST['product_paypal_field']) && !isset($_POST['product_price_field'])){
 			return;
 		}
 

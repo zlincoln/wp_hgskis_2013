@@ -10,7 +10,7 @@ get_header();
 		<ul class="slides">
 			<?php
 			if(have_posts()): while(have_posts()): the_post();
-			$vimeo_embed = get_post_meta($post->ID, 'vimeo_embed');
+			$vimeo_embed = get_post_meta($post->ID, 'vimeo_embed', true);
 			if($vimeo_embed[0] != ''):
 			?>
 			<li>

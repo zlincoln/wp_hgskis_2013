@@ -30,7 +30,7 @@ class PostMeta{
 		wp_nonce_field('vimeo_embed_verify', 'vimeo_embed_field_value');
 
 echo <<<EOT
-	<label for="vimeo_id_field">Vimeo Embed</label>
+	<label for="vimeo_embed_field">Vimeo Embed</label>
 	<input type="text" id="vimeo_embed_field" name="vimeo_embed_field" value='$vimeo_embed' style="width:100%;">
 EOT;
 
