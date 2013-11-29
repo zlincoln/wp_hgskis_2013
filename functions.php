@@ -1,6 +1,6 @@
 <?php
 	
-define('THEME_DIR', 'wp-content/themes/hgskis');
+define('THEME_DIR', 'wp-content/themes/wp_hgskis_2013');
 
 register_nav_menus(array(
 	'main_nav_left' => 'Main Navigation Menu (left)',
