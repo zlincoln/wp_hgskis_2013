@@ -32,7 +32,7 @@ $vimeo_embed = get_post_meta(get_the_ID(), 'vimeo_embed', true);
 		</div>
 	</div>
 	<div class="item-details">
-		<h3 class="item-title"><?php the_title(); ?></h3>
+		<h3 class="item-title"><span><?php the_title(); ?></span></h3>
 		<?php if($duties != ''): ?>
 		<span class="duties"><?= $duties; ?></span>
 		<?php endif; ?>

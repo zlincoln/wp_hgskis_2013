@@ -51,15 +51,16 @@
 				console.log('here');
 				// window.location = $(this).attr('href');
 			}
-			//@todo: create method if two instances of .item-gallery
 			var detailIndex = $(this).data('curr-detail'),
 					target = $('#detail-target'),
 					currDetailIndex = target.data('curr-detail');
 			if(detailIndex != currDetailIndex){
-				console.log('pass');
 				target.slideUp().html($(this).html()).data('curr-detail', detailIndex);
-				target.find('.item-viewport').addClass('col-md-8 col-sm-6');
+				target.find('.item-viewport').addClass('col-md-10 col-sm-6');
 				target.find('.flex-holder').addClass('flexslider');
+				if($('section.gallery-detail-template').hasClass('family')){
+					target.find('.item-details').prependTo(target);
+				}
 				//init flexslider and responsive videos
 			  //@todo: 10sec delay
 			  $("#detail-target .flexslider").fitVids().flexslider({

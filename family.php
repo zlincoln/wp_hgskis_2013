@@ -31,6 +31,9 @@ $count = 1;
 ?>
 
 <section class="gallery-detail-template family container">
+	<div class="row">
+		<h1 class="col-xs-12"><span>The HG Famila</span></h1>
+	</div>
 	<div id="detail-target" class="row" data-curr-detail="0"></div>
 	<div class="row item-gallery">
 		<h2 class="col-xs-12">Riders</h2>
