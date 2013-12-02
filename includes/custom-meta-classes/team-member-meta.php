@@ -53,9 +53,11 @@ EOT;
 		echo '<label for="team_photo">Team Photos</label>';
 		echo '<input type="text" id="team_photo_0" name="team_photo[0]" value="'.$photos[0][0].'" style="width:100%;">';
 
-		foreach($photos[0] as $key => $photo){
-			if($key != 0){
-				echo '<input type="text" id="team_photo_'.$key.'" name="team_photo['.$key.']" value="'.$photo.'" style="width:100%">';
+		if(is_array($photos)){
+			foreach($photos[0] as $key => $photo){
+				if($key != 0){
+					echo '<input type="text" id="team_photo_'.$key.'" name="team_photo['.$key.']" value="'.$photo.'" style="width:100%">';
+				}
 			}
 		}
 		echo '<button class="add-team-photo-input">Add another photo</button>';

@@ -46,7 +46,7 @@ $count = 1;
 		?>
 	</div><!-- /.row -->
 	<div class="row item-gallery">
-		<h2 class="col-xs-12">Team</h2>
+		<h2 class="col-xs-12">The Minds</h2>
 		<?php
 		$team = new WP_Query($team_args);
 		if($team->have_posts()): while($team->have_posts()): $team->the_post();
