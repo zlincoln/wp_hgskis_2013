@@ -43,9 +43,9 @@ EOT;
 
 		$vimeo_embed_value = $_POST['vimeo_embed_verify_value'];
 
-		if(!wp_verify_nonce($vimeo_embed_value, 'vimeo_embed_verify')){
-			die('couldn\'t verify');
-		}
+		// if(!wp_verify_nonce($vimeo_embed_value, 'vimeo_embed_verify')){
+		// 	die('couldn\'t verify');
+		// }
 
 		if($_POST['post_type'] == 'page'){
 			if(!current_user_can('edit_page', $post_id)){
