@@ -27,7 +27,7 @@ class PostMeta{
 
 		$vimeo_embed = get_post_meta($post->ID, 'vimeo_embed', true);
 
-		wp_nonce_field('vimeo_embed_verify', 'vimeo_embed_field_value');
+		wp_nonce_field('vimeo_embed_verify', 'vimeo_embed_verify_value');
 
 echo <<<EOT
 	<label for="vimeo_embed_field">Vimeo Embed</label>
@@ -37,11 +37,11 @@ EOT;
 	}
 
 	public function save($post_id){
-		if(!isset($_POST['vimeo_embed_field_value'])){
+		if(!isset($_POST['vimeo_embed_verify_value'])){
 			return;
 		}
 
-		$vimeo_embed_value = $_POST['vimeo_embed_field_value'];
+		$vimeo_embed_value = $_POST['vimeo_embed_verify_value'];
 
 		if(!wp_verify_nonce($vimeo_embed_value, 'vimeo_embed_verify')){
 			die('couldn\'t verify');
