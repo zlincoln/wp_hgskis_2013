@@ -23,10 +23,14 @@ $count = 1;
 		endwhile;
 		else:
 		?>
+		<?php
+		if(have_posts()): while(have_posts()): the_post();?>
 		<div class="col-xs-12 wysiwyg-content">
 			<?php the_content(); ?>
 		</div>
 		<?php
+		endif;
+		endwhile;
 		endif;
 		?>
 	</div>
