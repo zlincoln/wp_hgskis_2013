@@ -7,7 +7,7 @@ get_header();
 
 if(have_posts()): while(have_posts()): the_post();
 ?>
-<section class="container">
+<section class="container about-page">
 	<div class="row">
 		<h1><span>Behind the Brand</span></h1>
 	</div>
