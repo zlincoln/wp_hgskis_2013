@@ -24,7 +24,7 @@ $splitContent = explode(':::right_side:::',$content);
 		</div>
 		<div class="row">
 			<div class="col-xs-12 dimensions">
-				<table class="table">
+				<table class="table" style="margin-top: 30px;">
 					<thead>
 						<th>Length</th>
 						<th>Dimensions</th>
