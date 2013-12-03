@@ -33,7 +33,7 @@ $splitContent = explode(':::right_side:::',$content);
 					</thead>
 					<tbody>
 						<tr>
-							<td>168cm</td>
+							<td>172cm</td>
 							<td>125-96-125mm</td>
 							<td>18m</td>
 							<td>?lb/ski</td>
