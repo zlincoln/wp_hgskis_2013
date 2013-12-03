@@ -58,7 +58,11 @@ $media = new WP_Query('posts_per_page=2&paged='.$paged);
 		-->
 	</div>
 </section>
-
+<script type="text/javascript">
+	$(function(){
+		$('article').fitVids();
+	})
+</script>
 <?php 
 get_footer();
 ?>
