@@ -905,6 +905,7 @@ section.ski-detail h1 span{display:none;}
 section.ski-detail h1 img{margin:0 auto;}
 section.ski-detail .wysiwyg-content div>ul{margin:0;padding:0;}section.ski-detail .wysiwyg-content div>ul>li{text-transform:uppercase;}section.ski-detail .wysiwyg-content div>ul>li>ul{margin:10px 0;}section.ski-detail .wysiwyg-content div>ul>li>ul>li{text-transform:none;}
 section.ski-detail .wysiwyg-content form{margin-top:40px;text-align:center;width:100%;}section.ski-detail .wysiwyg-content form table{width:100%;text-align:center;margin-bottom:10px;}
+section.ski-detail .wysiwyg-content form p{margin-top:10px;}section.ski-detail .wysiwyg-content form p img{margin-top:10px;}
 section.about-page h1{text-align:center;text-transform:uppercase;font-size:18px;position:relative;margin-bottom:20px;}section.about-page h1 span{display:inline-block;}section.about-page h1 span:before,section.about-page h1 span:after{border-top:1px solid #383833;display:block;height:1px;content:" ";width:40%;position:absolute;left:0;top:49.5%;}
 section.about-page h1 span:after{right:0;left:auto;}
 section.about-page div.photo-caption{border-bottom:1px solid #383833;text-align:center;margin-bottom:20px;}section.about-page div.photo-caption p{width:60%;margin:20px auto;font-size:12px;font-style:italic;}@media (max-width:500px){section.about-page div.photo-caption p{width:90%;}}
