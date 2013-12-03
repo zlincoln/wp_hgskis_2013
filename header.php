@@ -27,7 +27,7 @@
 	<header class="clearfix">
 		<nav class="navbar" role="navigation">
 			<div class="container">
-				<div class="navbar-header clearfix">
+				<div class="navbar-header">
 					<a class="navbar-brand" href="index.php"></a>
 					<a href="#footer-nav" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".main-nav">
 						<span class="sr-only">Toggle Navigation</span>
