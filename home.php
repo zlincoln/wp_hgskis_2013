@@ -83,6 +83,7 @@ $videos = new WP_Query('posts_per_page=5&category_name=video');
 		      useCSS: false,
 		      animationLoop: false,
 		      smoothHeight: true,
+		      slideshowSpeed: 10000,
 		      before: function(slider){
 		      	//pause video before moving to next slide
 		      	var video2Pause = $('.flexslider li.flex-active-slide iframe').attr('id'),
