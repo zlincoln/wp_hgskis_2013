@@ -3,7 +3,7 @@ $photo_array = get_post_meta(get_the_ID(), 'team_photo', false);
 $duties = get_post_meta(get_the_ID(), 'duties', true);
 $vimeo_embed = get_post_meta(get_the_ID(), 'vimeo_embed', true);
 ?>
-<a class="item-wrapper col-xs-12 col-sm-6 col-md-4" href="javascript:void(0)" data-curr-detail="<?= $count; ?>">
+<a class="item-wrapper col-xs-12 col-sm-6" href="javascript:void(0)" data-curr-detail="<?= $count; ?>">
 	<div class="item-viewport">
 		<div class="flex-holder">
 			<ul class="slides">
