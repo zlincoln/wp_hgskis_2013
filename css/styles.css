@@ -876,8 +876,8 @@ html[xmlns] .slides{display:block;}
 body header nav.navbar ul.main-nav{list-style-type:none;margin:0px;display:table;width:50%;float:left;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;}body header nav.navbar ul.main-nav li{display:table-cell;float:none;vertical-align:middle;}body header nav.navbar ul.main-nav li a{text-transform:uppercase;display:block;text-align:center;border-left:1px solid #383833;font-size:1.125em;font-weight:lighter;color:#383833;text-decoration:none;-webkit-transition:color 0.5s;transition:color 0.5s;padding:2px 0;}body header nav.navbar ul.main-nav li a:hover{color:#0f7099;}
 body header nav.navbar ul.main-nav li:first-child a{border-left:none;}
 body header nav.navbar ul.main-nav li.current-menu-item{background:rgba(255, 255, 255, 0.5);}
-body header nav.navbar ul.main-nav.nav-left{padding-right:89.33333333333333px;}
-body header nav.navbar ul.main-nav.nav-right{padding-left:89.33333333333333px;}
+body header nav.navbar ul.main-nav.nav-left{padding-right:78.82352941176471px;}
+body header nav.navbar ul.main-nav.nav-right{padding-left:78.82352941176471px;}
 footer{margin-top:20px;}footer div.inner-wrap{border-top:1px solid #383833;padding-top:10px;padding-bottom:40px;}
 footer div.copyright-holder{font-size:0.75em;width:50%;}footer div.copyright-holder span{margin-left:2%;display:inline-block;}
 footer nav.social-nav{padding-top:10px;}footer nav.social-nav ul{list-style-type:none;padding:0;margin:0;}footer nav.social-nav ul li{display:inline-block;*display:inline;*zoom:1;}footer nav.social-nav ul li a i.icon{display:block;height:22px;width:24px;background:transparent url(../images/social-sprite.png) left top no-repeat;}footer nav.social-nav ul li a i.icon.icon-facebook{background-position:0 0;}
