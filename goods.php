@@ -29,8 +29,8 @@ $count = 1;
 			<?php the_content(); ?>
 		</div>
 		<?php
-		endif;
 		endwhile;
+		endif;
 		endif;
 		?>
 	</div>
