@@ -910,3 +910,8 @@ section.gallery-detail-template.family .item-gallery a.item-wrapper div.item-vie
 section.ski-detail h1 span{display:none;}
 section.ski-detail h1 img{margin:0 auto;}
 ul.rating{list-style-type:none;margin:0;padding:0;}ul.rating li{display:inline-block;*display:inline;*zoom:1;}
+h1{text-align:center;text-transform:uppercase;font-size:18px;}h1 span{display:inline-block;}h1 span:before,h1 span:after{border-top:1px solid #383833;display:block;height:1px;content:" ";width:40%;position:absolute;left:0;top:49.5%;}
+h1 span:after{right:0;left:auto;}
+div.photo-caption{border-bottom:1px solid #383833;}div.photo-caption p{width:80%;margin:0 auto;}
+.retailers ul{padding:0;list-style-type:none;}
+.first-stop{text-align:right;}.first-stop h3{font-size:12px;text-transform:uppercase;}
