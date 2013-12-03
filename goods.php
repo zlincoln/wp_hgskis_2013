@@ -21,6 +21,12 @@ $count = 1;
 		if($products->have_posts()): while($products->have_posts()): $products->the_post();
 		include('includes/good-detail-template.php');
 		endwhile;
+		else:
+		?>
+		<div class="col-xs-12 wysiwyg-content">
+			<?php the_content(); ?>
+		</div>
+		<?php
 		endif;
 		?>
 	</div>
