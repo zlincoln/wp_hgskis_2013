@@ -20,6 +20,10 @@ $splitContent = explode(':::right_side:::',$content);
 			<div class="col-xs-12 col-md-5 wysiwyg-content">
 				<?= $splitContent[1]; ?>
 				<?php echo get_post_meta($post->ID,'ski_paypal_embed', true); ?>
+				<p>
+				<span style="display:block;">*Pre-Order skis will ship by mid November*</span>
+				<img class="wp-image-2070" alt="Handmade on the North American East Coast" src="http://hgskis.com/wp-content/uploads/2013/10/North-AmericanFIN.png" width="163" height="163" /></p>
+				<img alt="" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1" border="0" />
 			</div>
 		</div>
 		<!--
