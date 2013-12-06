@@ -66,7 +66,7 @@
 			  $("#detail-target .flexslider").fitVids().flexslider({
 			      animation: "slide",
 			      useCSS: false,
-			      animationLoop: false,
+			      animationLoop: true,
 			      smoothHeight: true,
 			      slideshowSpeed: 10000,
 			      before: function(slider){

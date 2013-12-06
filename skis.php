@@ -22,6 +22,7 @@ $splitContent = explode(':::right_side:::',$content);
 				<?php echo get_post_meta($post->ID,'ski_paypal_embed', true); ?>
 			</div>
 		</div>
+		<!--
 		<div class="row">
 			<div class="col-xs-12 dimensions">
 				<table class="table" style="margin-top: 30px;">
@@ -48,6 +49,7 @@ $splitContent = explode(':::right_side:::',$content);
 				</table>
 			</div>
 		</div>
+		-->
 	</div>
 </section>
 

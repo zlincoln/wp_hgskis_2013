@@ -20,9 +20,11 @@ $videos = new WP_Query('posts_per_page=5&category_name=video');
 				<div class="embed">
 					<?= $vimeo_embed; ?>
 				</div>
+				<!--
 				<div class="caption">
 					<p><?php the_content(); ?></p>
 				</div>
+				-->
 			</li>
 			<?php
 			endif;
