@@ -13,7 +13,6 @@ $media = new WP_Query('posts_per_page=2&paged='.$paged);
 		<h1><span>Latest Updates</span></h1>
 	</div>
 	<div class="row">
-		<h1 class="col-xs-12">Latest Updates</h1>
 		<div class="col-xs-12">
 			<?php
 			if($media->have_posts()): while($media->have_posts()): $media->the_post();
