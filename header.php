@@ -1,14 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<?php
-		$current_page = basename($_SERVER['PHP_SELF'], '.php');
-		$pages = array('index', 'skis', 'team', 'blog', 'about', 'community');
-		$menu_left = array('home', 'skis', 'goods');
-		$menu_right = array('family', 'media', 'about');
-	?>
 	<meta charset="UTF-8">
-	<title>HG Skis | <?= ucfirst($current_page); ?></title>
+	<title>HG Skis | <?php the_title(); ?></title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="description" content="The East Coast's Premier Ski Company">
 	<meta name="keywords" content="hg,hgskis,hg skis,east coast,vermont,burlington,stinger,electronics,sugarbush,park skis,rails">
