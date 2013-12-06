@@ -903,7 +903,7 @@ section.gallery-detail-template.family #detail-target .item-viewport{margin:0 au
 section.gallery-detail-template.family .item-gallery a.item-wrapper div.item-viewport ul.slides li{display:none;}section.gallery-detail-template.family .item-gallery a.item-wrapper div.item-viewport ul.slides li:first-child{display:block;}
 section.ski-detail{padding-top:20px;}section.ski-detail h1 span{display:none;}
 section.ski-detail h1 img{margin:0 auto;}
-section.ski-detail .wysiwyg-content>h1,section.ski-detail .wysiwyg-content>h2,section.ski-detail .wysiwyg-content>h3{margin-top:0;}
+section.ski-detail .wysiwyg-content>h1,section.ski-detail .wysiwyg-content>h2,section.ski-detail .wysiwyg-content>h3,section.ski-detail .wysiwyg-content>h4,section.ski-detail .wysiwyg-content div>h3{margin-top:0;}
 section.ski-detail .wysiwyg-content div>ul{margin:0;padding:0;}section.ski-detail .wysiwyg-content div>ul>li{text-transform:uppercase;}section.ski-detail .wysiwyg-content div>ul>li>ul{margin:10px 0;}section.ski-detail .wysiwyg-content div>ul>li>ul>li{text-transform:none;}
 section.ski-detail .wysiwyg-content form{margin-top:40px;text-align:center;width:100%;}section.ski-detail .wysiwyg-content form table{width:100%;text-align:center;margin-bottom:10px;}
 section.ski-detail .wysiwyg-content form p{margin-top:10px;}section.ski-detail .wysiwyg-content form p img{margin-top:10px;}
