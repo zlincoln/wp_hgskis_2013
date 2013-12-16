@@ -53,6 +53,7 @@ if(have_posts()): while(have_posts()): the_post();
 					<label for="message">Message</label>
 					<textarea id="message" name="message" class="form-control" placeholder="What's up?"></textarea>
 				</div>
+				<button type="submit" class="btn btn-primary">Send!</button>
 			</form>
 		</div>
 	</div>
