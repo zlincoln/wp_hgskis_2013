@@ -26,7 +26,7 @@ if(have_posts()): while(have_posts()): the_post();
 		<div class="col-xs-12">
 			<img src="http://hgskis.com/wp-content/uploads/2010/12/HG-7-of-7-e1386310509675.jpg" alt="HG (7 of 7)" class="alignnone size-full wp-image-2201 img-responsive" />
 			<div class="photo-caption">
-			"HG Skis is the East Coast's premier up and coming ski company. We build skis to improve our own experience, and then apply it to the skiers around us. As we begin to sell skis we consider all or our clients test pilots. We provide them with the very best ski, and they provide us with their opinions and recommendations."
+				<p>"HG Skis is the East Coast's premier up and coming ski company. We build skis to improve our own experience, and then apply it to the skiers around us. As we begin to sell skis we consider all or our clients test pilots. We provide them with the very best ski, and they provide us with their opinions and recommendations."</p>
 			</div>
 		</div>
 	</div>
