@@ -30,12 +30,12 @@ if(have_posts()): while(have_posts()): the_post();
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-md-8 wysiwyg-content">
-			<h4>Our history</h4>
+			<h3>Our history</h3>
 			<?php the_content(); ?>
 		</div>
 		<div class="hidden-xs hidden-sm col-md-4">
-			<h4>Contact Us!</h4>
-			<form class="form" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
+			<h3>Contact Us!</h3>
+			<form class="form well" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
 				<input type="hidden" name="recipient" value="info@hgskis.com">
 				<input type="hidden" name="subject" value="New contact from website">
 				<input type="hidden" name="redirect" value="http://hgskis.com?page_id=1323&amp;success=true">
@@ -59,7 +59,7 @@ if(have_posts()): while(have_posts()): the_post();
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-sm-6 retailers">
-			<h3>Retailers:</h3>
+			<h4>Retailers:</h4>
 			<span style="text-transform: uppercase; display: block;">Check out our skis in person</span>
 			<ul>
 				<li>First Stop Board Barn</li>
