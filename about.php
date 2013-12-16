@@ -36,7 +36,7 @@ if(have_posts()): while(have_posts()): the_post();
 		</div>
 		<div class="hidden-xs hidden-sm col-md-4">
 			<form class="form" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
-				<input type="hidden" name="recipient" value="znlincoln@gmail.com">
+				<input type="hidden" name="recipient" value="info@hgskis.com">
 				<input type="hidden" name="subject" value="New contact from website">
 				<input type="hidden" name="redirect" value="http://hgskis.com?page_id=1323&amp;success=true">
 				<input type="hidden" name="env_report" value="REMOTE_ADDR">
