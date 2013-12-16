@@ -8,19 +8,17 @@ get_header();
 if(have_posts()): while(have_posts()): the_post();
 ?>
 <section class="container about-page">
-	<?php
-	if(isset($_GET['success'])):?>
-	<div class="row">
-		<div class="alert alert-success col-xs-12">
-			<a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
-			<span>We've recieved your email, thanks a ton dude!</span>
-		</div>
-	</div>
-	<?php
-	endif;
-	?>
 	<div class="row">
 		<h1><span>Behind the Brand</span></h1>
+		<?php
+		if(isset($_GET['success'])):?>
+			<div class="alert alert-success col-xs-12">
+				<a class="close" data-dismiss="alert" href="#" aria-hidden="true">&times;</a>
+				<span>We've recieved your email, thanks a ton dude!</span>
+			</div>
+		<?php
+		endif;
+		?>
 	</div>
 	<div class="row">
 		<div class="col-xs-12">
@@ -32,9 +30,11 @@ if(have_posts()): while(have_posts()): the_post();
 	</div>
 	<div class="row">
 		<div class="col-xs-12 col-md-8 wysiwyg-content">
+			<h4>Our history</h4>
 			<?php the_content(); ?>
 		</div>
 		<div class="hidden-xs hidden-sm col-md-4">
+			<h4>Contact Us!</h4>
 			<form class="form" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
 				<input type="hidden" name="recipient" value="info@hgskis.com">
 				<input type="hidden" name="subject" value="New contact from website">
@@ -53,7 +53,7 @@ if(have_posts()): while(have_posts()): the_post();
 					<label for="message">Message</label>
 					<textarea id="message" name="message" class="form-control" placeholder="What's up?"></textarea>
 				</div>
-				<button type="submit" class="btn btn-primary">Send!</button>
+				<button type="submit" class="btn btn-primary btn-block">Send</button>
 			</form>
 		</div>
 	</div>
