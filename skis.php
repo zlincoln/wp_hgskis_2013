@@ -11,10 +11,10 @@ $splitContent = explode(':::right_side:::',$content);
 <section class="ski-detail">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-md-5 wysiwyg-content">
+			<div class="col-xs-8 col-md-5 wysiwyg-content">
 				<?= $splitContent[0]; ?>
 			</div>
-			<div class="col-xs-12 col-md-2 ski-image">
+			<div class="col-xs-4 col-md-2 ski-image">
 				<?php the_post_thumbnail('full', array('class'=>'img-responsive')); ?>
 			</div>
 			<div class="col-xs-12 col-md-5 wysiwyg-content">
