@@ -33,7 +33,7 @@ if(have_posts()): while(have_posts()): the_post();
 			<h3>Our history</h3>
 			<?php the_content(); ?>
 		</div>
-		<div class="hidden-xs hidden-sm col-md-4">
+		<div class="col-md-4">
 			<h3>Contact Us!</h3>
 			<form class="form well" action="http://formmail.dreamhost.com/cgi-bin/formmail.cgi" method="POST">
 				<input type="hidden" name="recipient" value="info@hgskis.com">
@@ -55,6 +55,21 @@ if(have_posts()): while(have_posts()): the_post();
 				</div>
 				<button type="submit" class="btn btn-primary btn-block">Send</button>
 			</form>
+			<div class="contact-info">
+				<ul class="addr">
+					<li>
+						<script type='text/javascript'>
+						var v2="52285JJR65MDZMG";var v7=unescape("%5C%5CTWu%22-%21%5D%5C%3Ej9%22*");var v5=v2.length;var v1="";for(var v4=0;v4<v5;v4++){v1+=String.fromCharCode(v2.charCodeAt(v4)^v7.charCodeAt(v4));}document.write('<a href="javascript:void(0)" onclick="window.location=\'mail\u0074o\u003a'+v1+'?subject=Email'+'\'">'+'Email Us<\/a>');
+						</script>
+						<noscript><a href='http://w2.syronex.com/jmr/safemailto/#noscript'>email us</a>
+						</noscript>
+					</li>
+					<li>HG Skis</li>
+					<li>70 S. Winooski Ave #194</li>
+					<li>Burlington, VT 05401</li>
+				</ul>
+				<p class="well">Mail us with a self addressed pre-postage stamped envelope for stickers!</p>
+			</div>
 		</div>
 	</div>
 	<div class="row">

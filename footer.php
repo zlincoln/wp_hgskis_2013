@@ -51,6 +51,10 @@
 			}
 		}
 
+		$('.navbar-toggle').on('click', function(e){
+			e.preventDefault();
+		});
+
 		// $(window).on('scroll', function(){
 		// 	stickyNav();
 		// });
