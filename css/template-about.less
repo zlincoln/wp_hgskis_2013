@@ -21,6 +21,12 @@ section.about-page{
 				right: 0;
 				left: auto;
 			}
+			@media(max-width: @screen-xs-max){
+				&:before, &:after{
+					content: '';
+					display: none;
+				}
+			}
 		}
 	}
 	div.photo-caption{

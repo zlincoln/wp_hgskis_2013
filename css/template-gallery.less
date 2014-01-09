@@ -89,6 +89,12 @@ section.gallery-detail-template{
 					right: 0;
 					left: auto;
 				}
+				@media(max-width: @screen-xs-max){
+					&:after, &:before{
+						content: '';
+						display: none;
+					}
+				}
 			}
 		}
 		#detail-target{
@@ -119,6 +125,12 @@ section.gallery-detail-template{
 						&:after{
 							right: 0;
 							left: auto;
+						}
+						@media(max-width: @screen-xs-max){
+							&:after, &:before{
+								content: '';
+								display: none;
+							}
 						}
 					}
 				}

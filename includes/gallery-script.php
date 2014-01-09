@@ -45,12 +45,6 @@
 
 		$('.item-gallery').on('click', '.item-wrapper', function(e){
 			e.preventDefault();
-			//@todo: figure this out
-			console.log(window.innerWidth <= 480);
-			if(window.innerWidth <= 480){
-				console.log('here');
-				// window.location = $(this).attr('href');
-			}
 			var detailIndex = $(this).data('curr-detail'),
 					target = $('#detail-target'),
 					currDetailIndex = target.data('curr-detail');
@@ -79,12 +73,13 @@
 			      }
 			  });
 				target.slideDown().addClass('open');
-				//@todo: add scrollto method
-				// target.scrollTo();
+				scrollTo();
 			}else{
-				//@todo: add scrollto method
-				// target.scrollTo();
+				scrollTo();
 			}
 		});
+		function scrollTo(){
+			$('html,body').animate({scrollTop: $('#detail-target').offset().top}, 2000, 'swing');
+		}
 	});
 </script>

@@ -122,6 +122,9 @@ body{
 					a.navbar-brand{
 						position: static;
 						margin: 0 !important;
+						background: transparent url(../images/logo-full.png) center top no-repeat;
+						width: 181px;
+						height: 80px;
 					}
 					a.navbar-toggle{
 						margin-top: 18px;
@@ -205,6 +208,18 @@ footer{
 					}
 				}
 			}
+		}
+	}
+	@media(max-width: @grid-float-breakpoint){
+		text-align: center;
+		div.copyright-holder, nav.social-nav{
+			float: none !important;
+			width: 100%;
+		}
+	}
+	@media(max-width: @screen-xs-max){
+		div.copyright-holder img{
+			padding-bottom: 10px;
 		}
 	}
 }
