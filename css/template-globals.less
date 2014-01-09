@@ -108,6 +108,50 @@ body{
 				}
 			}
 		}
+		@media(max-width: @grid-float-breakpoint){
+			//header
+			margin: 0 0 10px;
+			padding: 5px 15px;
+			nav.navbar{
+				// background: black;
+				div.navbar-header{
+					a.navbar-brand{
+						position: static;
+						margin: 0 !important;
+					}
+					a.navbar-toggle{
+						margin-top: 18px;
+						border: 1px solid @black;
+						span{
+							background: @black;
+						}
+					}
+				}
+				div.collapse-wrapper{
+					height: 0;
+					overflow: hidden;
+				}
+				ul.main-nav{
+					display: block;
+					float: none;
+					width: 100%;
+					li{
+						display: list-item;
+						a{
+							border: none;
+							text-align: left;
+							padding: 6px 15px;
+						}
+					}
+					&.nav-left, &.nav-right{
+						padding: 0;
+					}
+					&.nav-left{
+						padding-top: 15px;
+					}
+				}
+			}
+		}
 	}
 }
 
