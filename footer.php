@@ -12,8 +12,8 @@
 						<ul>
 							<li><a href="http://www.facebook.com/hgskis" target="_blank"><i class="icon icon-facebook"></i></a></li>
 							<li><a href="http://vimeo.com/hgskis" target="_blank"><i class="icon icon-vimeo"></i></a></li>
-							<li><a href="http://facebook.com" target="_blank"><i class="icon icon-instagram"></i></a></li>
-							<li><a href="http://facebook.com" target="_blank"><i class="icon icon-twitter"></i></a></li>
+							<li><a href="http://instagram.com/hgskis" target="_blank"><i class="icon icon-instagram"></i></a></li>
+							<li><a href="https://twitter.com/HG_Skis" target="_blank"><i class="icon icon-twitter"></i></a></li>
 						</ul>
 					</nav>
 				</div>
